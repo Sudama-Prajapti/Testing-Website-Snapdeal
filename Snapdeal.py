@@ -55,13 +55,13 @@ search_box.submit()
 # Category navigation (Men → Sports Shoes)
 wait.until(EC.element_to_be_clickable((By.XPATH, "//*[@id='js-4583-nav']/li[1]/a/div[1]"))).click()
 
-# Select a product (example product card)
+# Select a product 
 wait.until(EC.element_to_be_clickable((By.XPATH, "//*[@id='659177333667']/div[2]/div[1]/a/p"))).click()
 
 # Switch to new product window
 driver.switch_to.window(driver.window_handles[1])
 
-# Select shoe size
+# Select shoes size
 wait.until(EC.element_to_be_clickable((By.XPATH, "//*[@id='attribute-select-1']/div[2]/div/div/div[6]/div/div"))).click()
 
 # Add to cart
@@ -79,3 +79,4 @@ wait.until(EC.element_to_be_clickable((By.ID, "rzp-quickcart-button"))).click()
 print("Test Completed Successfully.")
 time.sleep(5)
 driver.quit()
+
